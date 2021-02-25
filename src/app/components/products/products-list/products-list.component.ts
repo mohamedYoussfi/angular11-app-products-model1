@@ -12,7 +12,7 @@ import {$e} from 'codelyzer/angular/styles/chars';
 export class ProductsListComponent implements OnInit {
 
   @Input() productsInput$:Observable<AppDataState<Product[]>> |null=null;
-  @Output() productsEventEmitter:EventEmitter<ActionEvent> =new EventEmitter<ActionEvent>();
+  //@Output() productsEventEmitter:EventEmitter<ActionEvent> =new EventEmitter<ActionEvent>();
 
   readonly DataStateEnum=DataStateEnum;
 
@@ -21,11 +21,14 @@ export class ProductsListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /*
   onSelect(p: Product) {
     this.productsEventEmitter.emit({
       type: ProductActionsTypes.SELECT_PRODUCT,payload:p
     });
   }
+
+
 
   onDelete(p: Product) {
     this.productsEventEmitter.emit({
@@ -42,4 +45,6 @@ export class ProductsListComponent implements OnInit {
   onActionEvent($event: ActionEvent) {
     this.productsEventEmitter.emit($event);
   }
+  */
+
 }
