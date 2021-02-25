@@ -9,17 +9,9 @@
       "available": true
     },
     {
+      "id": 2,
       "name": "p",
       "price": "90",
-      "quantity": 0,
-      "selected": true,
-      "available": true,
-      "id": 2
-    },
-    {
-      "id": 3,
-      "name": "azerty",
-      "price": 0,
       "quantity": 0,
       "selected": true,
       "available": true

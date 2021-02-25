@@ -11,7 +11,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 export class ProductEditComponent implements OnInit {
   productId:number;
   productFormGroup?:FormGroup;
-  private submitted:boolean=false;
+  submitted:boolean=false;
   constructor(private activatedRoute:ActivatedRoute,
               private productsService:ProductsService,
               private fb:FormBuilder) {
